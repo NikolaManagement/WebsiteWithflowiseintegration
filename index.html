@@ -102,36 +102,36 @@
 <script>
   
 
-// async function query(message) {
-//     const response = await fetch(
-        
-//         "http://localhost:3000/api/v1/prediction/9277bc0b-cb27-4f8e-b806-2bbf871f497c",
-//         {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json"
-//             },
-//             body: JSON.stringify({ question: message })
-//         }
-//     );
-//     const result = await response.json();
-//     return result;
-// }
-async function query(data) {
+async function query(message) {
     const response = await fetch(
-        "https://flowise-o4x8.onrender.com/api/v1/prediction/0d22d758-b696-4e7f-bdf8-6e261f51f1b3",
+        
+        "http://localhost:3000/api/v1/prediction/9277bc0b-cb27-4f8e-b806-2bbf871f497c",
         {
+            method: "POST",
             headers: {
-                Authorization: "Bearer GY3DeAnbBtrCYx9bOf8ijfDQES5kkCD8O5eyCpEoGAs=",
                 "Content-Type": "application/json"
             },
-            method: "POST",
-            body: JSON.stringify(data)
+            body: JSON.stringify({ question: message })
         }
     );
     const result = await response.json();
     return result;
 }
+// async function query(data) {
+//     const response = await fetch(
+//         "https://flowise-o4x8.onrender.com/api/v1/prediction/0d22d758-b696-4e7f-bdf8-6e261f51f1b3",
+//         {
+//             headers: {
+//                 Authorization: "Bearer GY3DeAnbBtrCYx9bOf8ijfDQES5kkCD8O5eyCpEoGAs=",
+//                 "Content-Type": "application/json"
+//             },
+//             method: "POST",
+//             body: JSON.stringify(data)
+//         }
+//     );
+//     const result = await response.json();
+//     return result;
+// }
 
 
 
