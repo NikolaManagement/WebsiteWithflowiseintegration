@@ -145,7 +145,12 @@
 // );
 
 
-
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "0d22d758-b696-4e7f-bdf8-6e261f51f1b3",
+        apiHost: "https://flowise-o4x8.onrender.com",
+    })
+   
 async function sendMessage(message) {
     // Display user's input with user icon
     const chatbotResponses = document.getElementById('chatbot-responses');
